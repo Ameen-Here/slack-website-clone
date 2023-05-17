@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Sidebar.css";
 import SidebarOption from "../SidebarOption/SidebarOption";
 
@@ -14,8 +14,26 @@ import FileCopyIcon from "@mui/icons-material/FileCopy";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AddIcon from "@mui/icons-material/Add";
+import db from "../../firebase";
 
 const Sidebar = () => {
+  const [channels, setChannels] = useState([]);
+  useEffect(() => {
+    // Connect to DB and list all the channels
+    db.collection("rooms").onSnapshot((snapshot) => {
+      setChannels(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          name: doc.data().name,
+        }))
+      );
+    });
+  }, []);
+
+  useEffect(() => {
+    // Run this code whenever the channels variable changes
+  }, [channels]);
+
   return (
     <div className="sidebar">
       <div className="sidebar__header">
@@ -42,6 +60,10 @@ const Sidebar = () => {
       <hr />
       {/* Connect to DB and list all the channels */}
       {/* SidebarOption */}
+      {channels.map((channel) => (
+        <SidebarOption title={channel.name} id={channel.id} />
+      ))}
+
       {/* ... */}
     </div>
   );
