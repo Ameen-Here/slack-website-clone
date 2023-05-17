@@ -26,7 +26,7 @@ const Header = () => {
         {/* search icon */}
         <SearchIcon />
         {/* Search Input */}
-        <input placeholder="Search" />
+        <input placeholder="Search Autogenbot" />
       </div>
       <div className={classes.header__right}>
         {/* Help Icon */}
