@@ -13,8 +13,8 @@ function App() {
         <div className="app__body">
           <Sidebar />
           <Switch>
-            <Route path="/rooms/:roomId">
-              <Chat />
+            <Route path="/room/:roomId">
+              <Chat key={window.location.pathname} />
             </Route>
             <Route path="/">{/* Welcome */}</Route>
           </Switch>
