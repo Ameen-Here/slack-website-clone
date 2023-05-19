@@ -6,9 +6,11 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Chat from "./Components/Chat/Chat";
 import { useState } from "react";
 import Login from "./Components/Login/Login";
+import { useStateValue } from "./StateProvider";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [{ user }] = useStateValue();
+
   return (
     <div className="App">
       <BrowserRouter>

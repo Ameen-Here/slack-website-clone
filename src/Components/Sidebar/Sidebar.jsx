@@ -15,8 +15,10 @@ import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AddIcon from "@mui/icons-material/Add";
 import db from "../../firebase";
+import { useStateValue } from "../../StateProvider";
 
 const Sidebar = () => {
+  const [{ user }] = useStateValue();
   const [channels, setChannels] = useState([]);
   useEffect(() => {
     // Connect to DB and list all the channels
@@ -40,7 +42,8 @@ const Sidebar = () => {
         <div className="sidebar__info">
           <h2>Autogenbot</h2>
           <h3>
-            <FiberManualRecordIcon className="green__icon" /> Ameen Noushad
+            <FiberManualRecordIcon className="green__icon" />{" "}
+            {user?.displayName}
           </h3>
         </div>
         <CreateReactIcon className="editor__icon" />
