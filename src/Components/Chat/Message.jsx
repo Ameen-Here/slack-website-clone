@@ -2,7 +2,7 @@ import React from "react";
 import "./Message.css";
 
 const Message = ({ message, timestamp, user, userimage }) => {
-  console.log(userimage);
+  console.log("Image", userimage);
   return (
     <div className="message">
       <img src={userimage} alt="user" />
