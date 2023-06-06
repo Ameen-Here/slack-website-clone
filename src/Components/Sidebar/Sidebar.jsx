@@ -44,7 +44,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar__header">
         <div className="sidebar__info">
-          <h2>Autogenbot</h2>
+          <h2>Ameen's Slack</h2>
           <h3>
             <FiberManualRecordIcon className="green__icon" />{" "}
             {user?.displayName}
