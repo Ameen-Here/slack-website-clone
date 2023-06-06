@@ -3,7 +3,7 @@ import "./SidebarOption.css";
 import { useHistory } from "react-router-dom";
 import db from "../../firebase";
 
-const SidebarOption = ({ Icon, title, id, addChannelOption }) => {
+const SidebarOption = ({ Icon, title, id, addChannelOption, url }) => {
   const history = useHistory();
   const addChannel = () => {
     const channelName = prompt("Please enter the channel name");
@@ -15,10 +15,14 @@ const SidebarOption = ({ Icon, title, id, addChannelOption }) => {
     }
   };
   const selectChannel = () => {
-    if (id) {
-      history.push(`/room/${id}`);
+    if (url) {
+      window.open(url, "_blank");
     } else {
-      history.push(title);
+      if (id) {
+        history.push(`/room/${id}`);
+      } else {
+        history.push(title);
+      }
     }
   };
   return (

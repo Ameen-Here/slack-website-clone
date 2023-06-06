@@ -3,8 +3,12 @@ import "./Sidebar.css";
 import SidebarOption from "../SidebarOption/SidebarOption";
 
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import LanguageIcon from "@mui/icons-material/Language";
 import CreateReactIcon from "@mui/icons-material/Create";
 import InsertCommentIcon from "@mui/icons-material/InsertComment";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import HomeIcon from "@mui/icons-material/Home";
 import InboxIcon from "@mui/icons-material/Inbox";
 import DraftsIcon from "@mui/icons-material/Drafts";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
@@ -48,14 +52,40 @@ const Sidebar = () => {
         </div>
         <CreateReactIcon className="editor__icon" />
       </div>
-      <SidebarOption Icon={InsertCommentIcon} title="Threads" />
-      <SidebarOption Icon={InboxIcon} title="Mentions & reactions" />
-      <SidebarOption Icon={DraftsIcon} title="Saved items" />
-      <SidebarOption Icon={BookmarkBorderIcon} title="Channel browser" />
-      <SidebarOption Icon={PeopleAltIcon} title="People & user groups" />
-      <SidebarOption Icon={AppsIcon} title="Apps" />
-      <SidebarOption Icon={FileCopyIcon} title="File browser" />
-      <SidebarOption Icon={ExpandLessIcon} title="Show less" />
+      <SidebarOption
+        Icon={HomeIcon}
+        title="Portfolio"
+        url="https://www.ameennoushad.com"
+      />
+      <SidebarOption
+        Icon={InboxIcon}
+        title="Resume"
+        url="https://bit.ly/3WR0QRD"
+      />
+      <SidebarOption
+        Icon={LinkedInIcon}
+        title="Linkedin"
+        url="https://www.linkedin.com/in/ameen-noushad-888b79242/"
+      />
+
+      <SidebarOption
+        Icon={GitHubIcon}
+        title="Github"
+        url="https://github.com/Ameen-Here"
+      />
+
+      <SidebarOption
+        Icon={LanguageIcon}
+        title="Asset Tracker Website"
+        url="https://fierce-citadel-85684.herokuapp.com/"
+      />
+
+      <SidebarOption
+        Icon={FileCopyIcon}
+        title="Netflix Clone"
+        url="https://netfli-website-delta.vercel.app/login"
+      />
+
       <hr />
       <SidebarOption Icon={ExpandMoreIcon} title="Channels" />
       <hr />
