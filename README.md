@@ -4,6 +4,11 @@
 I developed Slack Website clone as a personal project driven by my admiration for the Slack app. The project aimed to recreate the key features
 and functionalities of Slack, offering a similar collaborative communication platform.
 
+### Live Demo:
+https://slack-website-clone-d8ed5.web.app/
+
+![ezgif com-video-to-gif](https://github.com/Ameen-Here/slack-website-clone/assets/86822695/2f431ea4-8593-4e04-8295-538551ce19a5)
+
 ### Technologies Used
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="30" height="30"/> </a>  &emsp;   <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="30" height="30"/> </a>  &emsp;   <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="30" height="30"/> </a>  &emsp;  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="css3" width="30" height="30"/> </a>  &emsp;   &emsp;  <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="css3" width="30" height="30"/> </a>        
@@ -12,6 +17,7 @@ and functionalities of Slack, offering a similar collaborative communication pla
 
 - Built using React, tailwindCSS and firebase for deployment and real time data storage.
 - Implemented authentication as well as all features that are available for a room chat.
-- Can chat real time along with other users.
+- Can chat real
+time along with other users.
 
 URL : (https://slack-website-clone-d8ed5.web.app/)
